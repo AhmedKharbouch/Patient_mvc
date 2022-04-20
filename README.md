@@ -102,7 +102,7 @@
 
 >![layout result](https://user-images.githubusercontent.com/102327247/164129534-850b7692-d4e0-40c1-bfe1-f4ed9e887b91.PNG)
 
-### Rendu graphique apres plusieur modification dans le code html
+### Rendu graphique apres plusieurs modifications dans le code html
 
 ![finale result](https://user-images.githubusercontent.com/102327247/164129759-cb8094b3-c325-43f3-9e1c-a0c924cf99a8.PNG)
 
