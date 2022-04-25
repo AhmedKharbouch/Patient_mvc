@@ -52,6 +52,8 @@
 ## Resultat final
 >![resultfinal](https://user-images.githubusercontent.com/102327247/163622526-a49b016f-62b1-4d6e-9c53-e8cb2dedbe33.PNG)
 
+# **___________________________END FIRST COMMIT___________________________**
+
 # **Patient mvc second commit**
 ## gestion patient second commit
 
@@ -105,6 +107,111 @@
 ### Rendu graphique apres plusieurs modifications dans le code html
 
 ![finale result](https://user-images.githubusercontent.com/102327247/164129759-cb8094b3-c325-43f3-9e1c-a0c924cf99a8.PNG)
+
+# **___________________________END SECOND COMMIT___________________________**
+
+# **Patient mvc third commit**
+## gestion patient third commit
+
+### add dependency for spring security 5
+
+> ![dependency](https://user-images.githubusercontent.com/102327247/164948502-d1430391-14d3-4e93-a8e0-567f710b6a35.PNG)
+
+### add class (securityconfig)
+
+>1/2
+
+
+
+>![securityconfig1](https://user-images.githubusercontent.com/102327247/164948556-9eb7f664-282f-4d26-a5d9-e2864c42c61e.PNG)
+
+>2/2
+
+-Using jdbcauthentification (database methode) to get role
+-Test the login and password 
+-Hash password with predefined methode called passwordEnconder() contain instance of BCryptPasswordEncoder()
+handle url escale breach by using (antMatchers()) for path and (hasRole()) for roles
+
+>![securityconfig2](https://user-images.githubusercontent.com/102327247/164948558-0d6165e1-8694-4589-a4d3-1bba041ae8d7.PNG)
+
+### add controller security (SecurityController)
+
+-mapping to 403 page (403.html)
+
+>1/2
+>![page404](https://user-images.githubusercontent.com/102327247/164949745-3277706f-a9c0-4738-acf9-d6490240a54f.PNG)
+
+### result
+
+
+### update PatientController
+
+-Update path to /user/** or /admin/**
+
+>1/5
+
+>![1](https://user-images.githubusercontent.com/102327247/164949948-0d434ed8-7d56-444f-8a30-2459758e0321.PNG)
+
+>2/5
+
+>![2](https://user-images.githubusercontent.com/102327247/164949954-e291ef8a-3b1c-44a6-b8e8-c05577887e77.PNG)
+
+>3/5
+
+>![3](https://user-images.githubusercontent.com/102327247/164949958-7c1a3cda-9925-43bf-baa9-8540c1655844.PNG)
+
+>4/5
+
+>![4](https://user-images.githubusercontent.com/102327247/164949960-520b2d0e-f94a-4dca-aa61-affcab307d9e.PNG)
+
+>5/5
+
+>![5](https://user-images.githubusercontent.com/102327247/164949985-bbff74a6-df3f-4f36-86c9-77af7a37b316.PNG)
+
+### update template.html 
+
+-using sec:authorize="isAuthenticated()" and sec:authorize="hasRole()" to hide or show nav-link 
+
+>![hasrole_template](https://user-images.githubusercontent.com/102327247/164950187-9a1f46e1-fb1f-409e-be37-1ce7d9a287e5.PNG)
+
+
+
+### Layout result
+
+-Login
+
+>![login_page](https://user-images.githubusercontent.com/102327247/164950016-bab0af45-17be-46da-bddd-00ca5ab5fa64.PNG)
+
+-Logout
+
+>![logout](https://user-images.githubusercontent.com/102327247/164950035-428ef359-51e5-465e-bd8c-07376d459801.PNG)
+
+-Confirm Logout
+
+![confirmation_logout](https://user-images.githubusercontent.com/102327247/164950039-9bd71f56-6c1f-46b1-a8a8-aa707c74ade1.PNG)
+
+-home page without login permitAll();
+
+>![indexwithoutlogin](https://user-images.githubusercontent.com/102327247/164950073-7a9d428c-6889-4d93-87e4-dc6f597da50f.PNG)
+
+-Page for user role
+
+>![menu_role_user](https://user-images.githubusercontent.com/102327247/164950094-72203a8a-e795-445d-9ede-6188ab9e2ae5.PNG)
+
+-Page for admin role
+
+>![menu_role_admin](https://user-images.githubusercontent.com/102327247/164950102-1ff88d7e-741b-4b2f-85d3-384486614c52.PNG)
+
+# **___________________________END THIRD COMMIT___________________________**
+
+
+
+
+
+
+
+
+
 
 
 
