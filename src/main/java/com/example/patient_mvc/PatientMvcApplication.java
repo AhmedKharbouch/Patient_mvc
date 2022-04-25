@@ -2,10 +2,13 @@ package com.example.patient_mvc;
 
 import com.example.patient_mvc.entities.Patient;
 import com.example.patient_mvc.repositories.PatientRepository;
+import com.example.patient_mvc.security.service.SecurityService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Date;
 
@@ -38,6 +41,31 @@ public class PatientMvcApplication {
         };
 
 
+    }
+
+    @Bean
+    PasswordEncoder passwordEncoder(){
+        return  new BCryptPasswordEncoder();
+    }
+
+
+    //@Bean
+     CommandLineRunner saveUsers(SecurityService securityService){
+
+        return args -> {
+            securityService.saveNewUser("user1","2345","2345");
+            securityService.saveNewUser("reda","1234","1234");
+            securityService.saveNewUser("leila","1234","1234");
+
+            securityService.saveNewRole("USER","");
+            securityService.saveNewRole("ADMIN","");
+
+            securityService.addRoleToUser("user1","ADMIN");
+            securityService.addRoleToUser("user1","USER");
+            securityService.addRoleToUser("reda","USER");
+            securityService.addRoleToUser("leila","USER");
+
+        };
     }
 
 
