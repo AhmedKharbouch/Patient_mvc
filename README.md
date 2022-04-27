@@ -247,7 +247,7 @@
 >![approle](https://user-images.githubusercontent.com/102327247/165513683-48fe5182-2cb8-4408-827b-ae073f9c61aa.PNG)
 >2/2
 
->![appuser](https://user-images.githubusercontent.com/102327247/165515220-e3a05304-476d-4944-b173-1555500fb706.PNG
+>![appuser](https://user-images.githubusercontent.com/102327247/165515220-e3a05304-476d-4944-b173-1555500fb706.PNG)
 
 ### add AppRoleRepository and AppUserRepository class 
 
