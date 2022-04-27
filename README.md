@@ -127,10 +127,13 @@
 
 >2/2
 
--Using jdbcauthentification (database methode) to get role
--Test the login and password 
--Hash password with predefined methode called passwordEnconder() contain instance of BCryptPasswordEncoder()
-handle url escale breach by using (antMatchers()) for path and (hasRole()) for roles
+>-Using jdbcauthentification (database methode) to get role
+
+>-Test the login and password 
+
+>-Hash password with predefined methode called passwordEnconder() contain instance of BCryptPasswordEncoder()
+
+>-handle url escale breach by using (antMatchers()) for path and (hasRole()) for roles
 
 >![securityconfig2](https://user-images.githubusercontent.com/102327247/164948558-0d6165e1-8694-4589-a4d3-1bba041ae8d7.PNG)
 
@@ -174,6 +177,26 @@ handle url escale breach by using (antMatchers()) for path and (hasRole()) for r
 
 >![hasrole_template](https://user-images.githubusercontent.com/102327247/164950187-9a1f46e1-fb1f-409e-be37-1ce7d9a287e5.PNG)
 
+### Database tables
+
+-DB role
+
+>![bd_jdbc](https://user-images.githubusercontent.com/102327247/165516578-3e058b61-b208-4b5f-960f-f964194865ee.PNG)
+
+-DB users
+
+>![db_user](https://user-images.githubusercontent.com/102327247/165516675-825fc712-3c8c-41fd-9c6f-4ee956aa6976.PNG)
+
+-DB users_roles
+
+>![db_role_user](https://user-images.githubusercontent.com/102327247/165516844-13c364a9-fa69-404e-a7bd-35a0608e8e51.PNG)
+
+-all tables
+
+>![bd_jdbc](https://user-images.githubusercontent.com/102327247/165516883-a732f2a4-c1ff-417f-a8e3-d73cd9d568d9.PNG)
+
+
+
 
 
 ### Layout result
@@ -204,7 +227,74 @@ handle url escale breach by using (antMatchers()) for path and (hasRole()) for r
 
 # **___________________________END THIRD COMMIT___________________________**
 
+# **Patient mvc fourth commit**
+## gestion patient fourth commit
 
+### Update SecurityConfig
+
+-add jdbcauthentification
+
+>![jdbcauthentification](https://user-images.githubusercontent.com/102327247/165512949-eb2aa695-bae9-45dc-879b-6d1a343a610f.PNG)
+
+-Switching from jdbc to UserDetailAuthentification
+
+>![userdetailauthentification](https://user-images.githubusercontent.com/102327247/165513165-4690e04d-4c01-4832-957d-07fc37d5162a.PNG)
+
+### add AppRole and AppUser class 
+
+>1/2
+
+>![approle](https://user-images.githubusercontent.com/102327247/165513683-48fe5182-2cb8-4408-827b-ae073f9c61aa.PNG)
+>2/2
+
+>![appuser](https://user-images.githubusercontent.com/102327247/165515220-e3a05304-476d-4944-b173-1555500fb706.PNG
+
+### add AppRoleRepository and AppUserRepository class 
+
+>1/2
+
+>![approlerepo](https://user-images.githubusercontent.com/102327247/165517735-244594e7-b3f3-4dcc-b9c6-8bac949927ec.PNG)
+
+>2/2
+
+>![appuserrepo](https://user-images.githubusercontent.com/102327247/165517919-d092ed96-ea8d-4907-8a6b-1691900c3a0a.PNG)
+
+
+### add Interface SecurityService
+
+>![securityservice](https://user-images.githubusercontent.com/102327247/165515482-07918e41-6dec-439e-9131-9f457008319b.PNG)
+
+### add class SecurityServiceImpl
+
+-implementation of (Security Methode) in (SecurityServiceImpl) class
+
+>1/3
+
+>![securityimpl1](https://user-images.githubusercontent.com/102327247/165515788-37fd3eac-158d-448c-a3a6-4613d5d85801.PNG)
+
+>2/3
+
+>![serviceimpl2](https://user-images.githubusercontent.com/102327247/165515817-626f1b9b-c4b7-4e1f-abe1-385ac6cc6546.PNG)
+
+
+>3/3
+
+>![serviceimpl3](https://user-images.githubusercontent.com/102327247/165515834-b7fd33de-abde-41c9-9a23-09ed0d95b62a.PNG)
+
+
+### add class UserDetailServiceImpl
+
+-implement (UserDetailService) interface
+
+>![userdetailsecurityimpl](https://user-images.githubusercontent.com/102327247/165516262-e8e725dc-8bf4-4e08-8510-f5da9a69925b.PNG)
+
+### update class SecurityConfig
+
+-replace hasRole by hasAuthority
+
+>![hasauthorities](https://user-images.githubusercontent.com/102327247/165517100-6142f14b-ac11-4c46-87c4-d35ff873b7b9.PNG)
+
+# **___________________________END FOURTH COMMIT___________________________**
 
 
 
